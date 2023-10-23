@@ -20,7 +20,7 @@ canvas {
 }
 
 body {
-  background: #000000;
+  background: #ec90d8;
   background-image: url("./img/2b33c27d-52f6-4bb0-9d74-327100409090.jpg");
   background-position: top center;
   background-size: cover;
@@ -34,19 +34,28 @@ body {
 }
 
 .principal {
-  font-family: "Copperplate";
+  font-family: "system-ui";
   font-size: 70px;
   text-shadow: 1px 2px 2px #000000;
 }
 
+.principal .name {
+    color: #dd00a1;;  /* Color para los nombres */
+    text-shadow: 3px 2px 2px #ffffff;
+}
+
+.principal .ampersand {
+    color: #ffffff;  /* Color blanco para el '&' */
+}
+
 .pl {
-  font-family: "Copperplate";
+  font-family: "system-ui";
   font-size: 50px;
   text-shadow: 1px 2px 2px #000000;
 }
 
 .date {
-  font-family: "Copperplate";
+  font-family: "system-ui";
   font-size: 40px;
   text-shadow: 2px 2px 2px #000000;
 }
@@ -70,7 +79,45 @@ a {
 }
 
 a:hover {
-  color:#7e0db3; 
+  color:#b30da5; 
   text-decoration:none; 
   cursor:pointer;  
+}
+.modal-content {
+    border-radius: 15px !important;  /* Bordes redondeados para el modal */
+    color: #000000;
+}
+
+.modal-header {
+    background-color: #cf0aa5;  /* Color de fondo para la cabecera */
+    color: white;  /* Color del texto en la cabecera */
+    border-top-left-radius: 15px !important;  /* Bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 15px !important;  /* Bordes redondeados en la esquina superior derecha */
+}
+
+.modal-footer {
+    justify-content: center;  /* Centrar el botón en el pie de página del modal */
+}
+
+.btn-secondary {
+    background-color:#db00ac !important;
+}
+
+.whatsapp-link {
+    display: block;  /* Hacer que el enlace ocupe su propia línea */
+    margin-top: 10px;  /* Espacio en la parte superior del enlace */
+    text-shadow: 2px 2px 2px #a640b34a;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ff00cb;
+    border-color: #ff00c4;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d900d5;
+    border-color: #cc00b0;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 0 189 / 50%);
 }
