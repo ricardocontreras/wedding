@@ -91,7 +91,7 @@ var ringer = {
         self.ctx.lineWidth = self.r_thickness;
         self.ctx.stroke();
 
-        self.ctx.shadowColor = "#fda5eb";  
+        self.ctx.shadowColor = "#fff";  
         self.ctx.shadowBlur = 1;  
         self.ctx.shadowOffsetX = 1;  
         self.ctx.shadowOffsetY = 1;
@@ -104,12 +104,11 @@ var ringer = {
 
         self.ctx.font = '25px Helvetica';
         self.ctx.fillText(label, 0, 23);
-        self.ctx.fillText(label, 0, 23);
         
-        self.ctx.lineWidth = 0.8;
+        self.ctx.lineWidth = 0.9;
         self.ctx.strokeText(label, 0, 23); //draw the text
 
-        self.ctx.font = 'bold 60px Helvetica';
+        self.ctx.font = 'bold 60px Parisienne';
         self.ctx.fillText(Math.floor(value), 0, -5);
         self.ctx.strokeText(Math.floor(value), 0, -5);
 

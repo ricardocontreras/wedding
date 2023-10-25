@@ -7,72 +7,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
         type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <h1 class="principal">
-        <span class="name">Day</span>
-        <span class="ampersand">&</span>
-        <span class="name">Rick</span>
-        <span class="wedding">
-            <br>
-            The Wedding!
-        </span>
-    </h1>
+    <div class="leyenda">
+        <div class="nombre">Day <span class="ampersand">&</span> Rick</div>
+        <div class="evento">Nos casamos!</div>
+    </div>
 
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="./script.js"></script>
+    <div class="canvas-container">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="./script.js"></script>
+    </div>
 
-    <div>
+    <div class="info-container">
         <h1 class="pl">
-            <br>
             <a href="https://www.instagram.com/los_fresnos_salon_de_eventos/">
                 Salón Los Fresnos
             </a>
         </h1>
-    </div>
-
-    <div>
-        <h1 class="date">
-            25 de Noviembre 2023
-        </h1>
-    </div>
-
-    <div class="confirm-button text-center my-4">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmationModal">
-            No olvides confirmar tu asistencia
-        </button>
-    </div>
-    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmationModalLabel">Confirmación de Asistencia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Por favor, confirma tu asistencia llamando al: <strong>(998) 343 44 65</strong>
-                    <a href="https://wa.link/1gteq6" class="whatsapp-link" target="_blank">Envíanos un mensaje en
-                        WhatsApp</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+        <div>
+            <h1 class="date">
+                25 de Noviembre 2023
+            </h1>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Asegúrate de colocar este código en el lugar donde deseas que aparezca el botón en tu HTML -->
+        <div class="whatsapp-button-container">
+            <a href="https://wa.link/1gteq6" class="whatsapp-button" target="_blank">
+                No olvides confirmar tu asistencia
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 

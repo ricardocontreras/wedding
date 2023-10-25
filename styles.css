@@ -17,107 +17,134 @@ canvas {
   position: relative;
   background: transparent;
   margin: 40px auto;
+  margin-top: 20%;
+}
+
+.canvas-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
 }
 
 body {
-  background: #ec90d8;
-  background-image: url("./img/2b33c27d-52f6-4bb0-9d74-327100409090.jpg");
-  background-position: top center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/2b33c27d-52f6-4bb0-9d74-327100409090.jpg');
   background-size: cover;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: table-cell;
-  vertical-align: middle;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leyenda {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgb(247 129 212 / 50%);
+  /* Fondo semitransparente negro */
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.principal {
-  font-family: "system-ui";
-  font-size: 70px;
-  text-shadow: 1px 2px 2px #000000;
+.nombre {
+  font-family: 'Parisienne', cursive;
+  font-size: 7vw;
+  color: #ff22b8;
+  /* Color de texto negro */
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 2px #ff22b8;
+  /* Contorno blanco */
 }
 
-.principal .name {
-    color: #dd00a1;;  /* Color para los nombres */
-    text-shadow: 3px 2px 2px #ffffff;
+.ampersand {
+  color: white;
+  font-size: 8vw;
+  -webkit-text-stroke: 0;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.principal .ampersand {
-    color: #ffffff;  /* Color blanco para el '&' */
-}
-
-.pl {
-  font-family: "system-ui";
-  font-size: 50px;
-  text-shadow: 1px 2px 2px #000000;
+.evento {
+  font-family: 'Parisienne', cursive;
+  font-size: 5vw;
+  color: #ff4cb4;
+  /* Color de texto azul oscuro */
+  margin-top: -10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 1px #ffc693;
+  /* Contorno blanco */
 }
 
 .date {
-  font-family: "system-ui";
+  font-family: 'Parisienne', fantasy;
+  color: white;
   font-size: 40px;
   text-shadow: 2px 2px 2px #000000;
 }
 
-.wedding {
-  font-family: "Brush Script MT";
-  font-size: 50px;
-  text-shadow: 2px 2px 2px #000000;
+.pl a{
+  color: white !important;
 }
 
-.year {
-  font-family: "Copperplate";
-  font-size: 23px;
-  text-shadow: 3px 2px 2px #000000;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  text-shadow: 2px 2px 2px #000000;
-}
-
-a:hover {
-  color:#b30da5; 
+.pl a:hover {
+  color:#b30da5 !important; 
   text-decoration:none; 
-  cursor:pointer;  
-}
-.modal-content {
-    border-radius: 15px !important;  /* Bordes redondeados para el modal */
-    color: #000000;
+  cursor:pointer; 
+  text-decoration: underline;
 }
 
-.modal-header {
-    background-color: #cf0aa5;  /* Color de fondo para la cabecera */
-    color: white;  /* Color del texto en la cabecera */
-    border-top-left-radius: 15px !important;  /* Bordes redondeados en la esquina superior izquierda */
-    border-top-right-radius: 15px !important;  /* Bordes redondeados en la esquina superior derecha */
+.info-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
 }
 
-.modal-footer {
-    justify-content: center;  /* Centrar el botón en el pie de página del modal */
+@media (max-width: 1200px) {
+  .leyenda {
+    top: 20%;
+    width: 100%;
+  }
 }
 
-.btn-secondary {
-    background-color:#db00ac !important;
+@media (max-width: 768px) {
+  .nombre {
+      font-size: 5vw;
+  }
+  .ampersand {
+      font-size: 6vw;
+  }
+  .evento {
+      font-size: 4vw;
+  }
+  canvas {
+      width: 100%;
+      height: auto;
+  }
 }
 
-.whatsapp-link {
-    display: block;  /* Hacer que el enlace ocupe su propia línea */
-    margin-top: 10px;  /* Espacio en la parte superior del enlace */
-    text-shadow: 2px 2px 2px #a640b34a;
+.whatsapp-button-container {
+  text-align: center;
+  margin: 20px 0; /* Ajusta el margen según sea necesario */
 }
-.btn-primary {
-    color: #fff;
-    background-color: #ff00cb;
-    border-color: #ff00c4;
+
+.whatsapp-button {
+  background-color: #d325bc; /* Color de fondo de WhatsApp */
+  color: #ffffff; /* Color del texto */
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  border-radius: 50px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño del texto */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
 }
-.btn-primary:hover {
-    color: #fff;
-    background-color: #d900d5;
-    border-color: #cc00b0;
-}
-.btn-primary.focus, .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgb(255 0 189 / 50%);
+
+.whatsapp-button:hover {
+  background-color: #860666; /* Color de fondo cuando se pasa el mouse */
 }
