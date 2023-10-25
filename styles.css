@@ -49,7 +49,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgb(247 129 212 / 50%);
+  background-color: rgba(255, 183, 233, 0.5);
   /* Fondo semitransparente negro */
   padding: 20px;
   border-radius: 10px;
@@ -75,11 +75,11 @@ body {
 .evento {
   font-family: 'Parisienne', cursive;
   font-size: 5vw;
-  color: #ff4cb4;
+  color: #ffffff;
   /* Color de texto azul oscuro */
   margin-top: -10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  -webkit-text-stroke: 1px #ffc693;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 1px #ffffff;
   /* Contorno blanco */
 }
 
